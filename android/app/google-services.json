@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "276241816284",
+    "project_id": "talk-coffee",
+    "storage_bucket": "talk-coffee.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:276241816284:android:79d4e309269b5b4eb23219",
+        "android_client_info": {
+          "package_name": "com.talkcoffee"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "276241816284-scm536buc0stgv83t28aiqfcqj0v6qkp.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCUSLgh0QKolQPgyIx_jfwPiwmmIP4Efjg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "276241816284-scm536buc0stgv83t28aiqfcqj0v6qkp.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

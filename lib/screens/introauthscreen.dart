@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:introduction_screen/introduction_screen.dart';
+import 'package:talkcoffee/authentication/navigateauthscreen.dart';
 
 import '../variables.dart';
 
@@ -48,7 +49,7 @@ class _IntroAuthScreenState extends State<IntroAuthScreen> {
         )
       ],
       onDone: (){
-        print("Done");
+        Navigator.push(context, MaterialPageRoute(builder: (context)=>NavigateAuthScreen()));
       },
       onSkip: (){
 

@@ -41,8 +41,22 @@ dependencies:
   cupertino_icons: ^1.0.2
 
 dev_dependencies:
+  flutter_launcher_icons:
+  flutter_native_splash:
   flutter_test:
     sdk: flutter
+
+flutter_icons:
+  ios: true
+  android: true
+  image_path_ios: "images/app_icon.png"
+  image_path_android: "images/app_icon.png"
+  adaptive_icon_background: "#ffffff" # or image
+  adaptive_icon_foreground: "images/app_icon_foreground.png"
+
+flutter_native_splash:
+  image: images/logo.png
+  color: "#ffffff"
 
 # For information on the generic Dart part of this file, see the
 # following page: https://dart.dev/tools/pub/pubspec

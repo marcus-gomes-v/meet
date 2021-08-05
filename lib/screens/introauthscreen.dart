@@ -54,7 +54,7 @@ class _IntroAuthScreenState extends State<IntroAuthScreen> {
       onSkip: (){
 
       },
-      showSkipButton: true,
+      showSkipButton: false,
       skip: const Icon(Icons.skip_next,size:45),
       next: const Icon(Icons.arrow_forward_ios),
       done: Text("Done", style: mystyle(20, Colors.black),)

@@ -21,7 +21,7 @@ class _NavigateAuthScreenState extends State<NavigateAuthScreen> {
             width: MediaQuery.of(context).size.width,
             height: MediaQuery.of(context).size.height /2, 
             decoration: BoxDecoration(
-              gradient: LinearGradient(colors: GradientColors.blue)
+              gradient: LinearGradient(colors: [Colors.brown[600], Colors.brown[400]])
             ),
             child: Center(
               child: Image.asset('images/logo.png', height: 100)
@@ -57,11 +57,11 @@ class _NavigateAuthScreenState extends State<NavigateAuthScreen> {
                       width: MediaQuery.of(context).size.width / 2,
                       height: 60,
                       decoration: BoxDecoration(
-                        gradient: LinearGradient(colors: GradientColors.beautifulGreen),
+                        gradient: LinearGradient(colors: GradientColors.lightBrown),
                         borderRadius: BorderRadius.circular(20)
                       ),
                       child: Center(
-                        child: Text("SIGN IN", style: mystyle(30, Colors.white),),
+                        child: Text("SIGN IN", style: mystyle(24, Colors.white),),
                       ),
                     ),
                   ),
@@ -76,7 +76,7 @@ class _NavigateAuthScreenState extends State<NavigateAuthScreen> {
                         borderRadius: BorderRadius.circular(20)
                       ),
                       child: Center(
-                        child: Text("SIGN UP", style: mystyle(30, Colors.white),),
+                        child: Text("SIGN UP", style: mystyle(24, Colors.white),),
                       ),
                     ),
                   )

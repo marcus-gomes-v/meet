@@ -22,7 +22,7 @@ class _LoginScreenState extends State<LoginScreen> {
             width: MediaQuery.of(context).size.width,
             height: MediaQuery.of(context).size.height /2, 
             decoration: BoxDecoration(
-              gradient: LinearGradient(colors: GradientColors.blue)
+              gradient: LinearGradient(colors: [Colors.brown[600], Colors.brown[400]])
             ),
             child: Center(
               child: Image.asset('images/logo.png', height: 100)
@@ -99,7 +99,7 @@ class _LoginScreenState extends State<LoginScreen> {
                       width: MediaQuery.of(context).size.width / 2,
                       height: 45,
                       decoration: BoxDecoration(
-                        gradient: LinearGradient(colors: GradientColors.beautifulGreen),
+                        gradient: LinearGradient(colors: GradientColors.lightBrown),
                         borderRadius: BorderRadius.circular(20)
                       ),
                       child: Center(

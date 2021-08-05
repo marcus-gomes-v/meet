@@ -33,13 +33,13 @@ class _VideoConferenceScreenState extends State<VideoConferenceScreen> with Sing
     return Scaffold(
       appBar: AppBar(
         centerTitle: true,
-        backgroundColor: Colors.lightBlue,
-        title: Text("Coffee Talk", style: mystyle(20, Colors.white, FontWeight.w700),),
+        backgroundColor: Colors.brown,
+        title: Text("Fala Café", style: mystyle(20, Colors.white, FontWeight.w700),),
         bottom: TabBar(
           controller: tabController,
           tabs: [
-            buildtab("Join Meeting"),
-            buildtab("Create Meeting")
+            buildtab("Tomar Café"),
+            buildtab("Fazer Café")
           ],
         ),
       ),

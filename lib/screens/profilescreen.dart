@@ -97,7 +97,7 @@ class _ProfileScreenState extends State<ProfileScreen> {
               height: MediaQuery.of(context).size.height / 2.5,
               decoration: BoxDecoration(
                 gradient: LinearGradient(
-                  colors: GradientColors.facebookMessenger
+                  colors: GradientColors.lightBrown
                 )
               ),
             )
@@ -132,7 +132,7 @@ class _ProfileScreenState extends State<ProfileScreen> {
                       gradient: LinearGradient(colors: GradientColors.cherry)
                     ),
                     child: Center(
-                      child: Text("Edit Profile", style: mystyle(17, Colors.white)),
+                      child: Text("Editar Nome", style: mystyle(17, Colors.white)),
                     ),
                   ),
                 )

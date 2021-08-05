@@ -15,8 +15,8 @@ class _IntroAuthScreenState extends State<IntroAuthScreen> {
     return IntroductionScreen(
       pages: [
         PageViewModel(
-          title: "Welcome",
-          body: "Welcome to Talk Coffee, the best video-conference app",
+          title: "Bem-vindo",
+          body: "Bem-vindo ao Fala Café o primeiro aplicativo Brasileiro de videoconferência.",
           image: Center(
             child: Image.asset('images/welcome.png', height: 175)
           ),
@@ -26,8 +26,8 @@ class _IntroAuthScreenState extends State<IntroAuthScreen> {
           )
         ),
         PageViewModel(
-          title: "Join or start meetings",
-          body: "Easy to use interface, join or start meetings in a fast time",
+          title: "Focamos em você",
+          body: "Nossa plataforma foi construída pensando em realizar calls de maneira simples, evitando dificuldades de criar uma conta para que você convide outros participantes.",
           image: Center(
             child: Image.asset('images/conference.png', height: 175)
           ),
@@ -37,10 +37,10 @@ class _IntroAuthScreenState extends State<IntroAuthScreen> {
           )
         ),
         PageViewModel(
-          title: "Security",
-          body: "Your security is important for us. Our servers are secure and reliable",
+          title: "Segurança",
+          body: "Para manter a segurança de nossa plataforma utilizamos tecnologia de ponta, servidores em cloud e um sistema de segurança ativa.",
           image: Center(
-            child: Image.asset('images/secure.jpg', height: 175)
+            child: Image.asset('images/secure.png', height: 175)
           ),
           decoration: PageDecoration(
             bodyTextStyle: mystyle(20, Colors.black),

@@ -9,11 +9,13 @@ class CreateMeeting extends StatefulWidget {
 }
 
 class _CreateMeetingState extends State<CreateMeeting> {
-  String code = '';
+  String code = '', prefix = '', sufix = '';
 
   createcode(){
     setState(() {
-      code = Uuid().v1().substring(0,6);
+      prefix = 'cf';
+      sufix = Uuid().v1().substring(1,5);
+      code = '$prefix$sufix';
     });
   }
 
@@ -25,14 +27,14 @@ class _CreateMeetingState extends State<CreateMeeting> {
         children: [
           Container(
             margin: EdgeInsets.only(top: 20),
-            child: Text('Create a code and share it with your friends', style: mystyle(20),textAlign: TextAlign.center,),
+            child: Text('Crie o código do seu café e convide pessoas para tomar aquele cafézinho com você', style: mystyle(20),textAlign: TextAlign.center,),
           ),
           SizedBox(height: 40,),
           Row(
             mainAxisAlignment: MainAxisAlignment.spaceEvenly,
             children: [
               Text("Code: ", style: mystyle(30),),
-              Text(code, style: mystyle(30, Colors.purple, FontWeight.w700),)
+              Text(code, style: mystyle(30, Colors.orange[200], FontWeight.w700),)
             ],
           ),
           SizedBox(height: 25,),
@@ -42,10 +44,10 @@ class _CreateMeetingState extends State<CreateMeeting> {
               width: MediaQuery.of(context).size.width / 2,
               height: 50,
               decoration: BoxDecoration(
-                gradient: LinearGradient(colors: GradientColors.facebookMessenger)
+                gradient: LinearGradient(colors: GradientColors.lightBrown)
               ),
               child: Center(
-                child: Text("Create Code", style: mystyle(20, Colors.white),),
+                child: Text("Criar cod do café", style: mystyle(15, Colors.white),),
               ),
             ),
           )

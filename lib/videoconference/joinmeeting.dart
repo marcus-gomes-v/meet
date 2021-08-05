@@ -70,7 +70,7 @@ class _JoinMeetingState extends State<JoinMeeting> {
           child: Column(
             children: [
               SizedBox(height: 24,),
-              Text('Room code', style: mystyle(20),),
+              Text('Cod do Café', style: mystyle(20),),
               SizedBox(height: 20,), 
               PinCodeTextField(
                 appContext: context,
@@ -90,7 +90,7 @@ class _JoinMeetingState extends State<JoinMeeting> {
                 style: mystyle(20),
                 decoration: InputDecoration(
                   border: OutlineInputBorder(),
-                  labelText: "Name (Leave if you want your username )",
+                  labelText: "Nome (Apenas caso não queria usar o padrão )",
                   labelStyle: mystyle(15)
                 ),
               ),
@@ -102,7 +102,7 @@ class _JoinMeetingState extends State<JoinMeeting> {
                     isVideoMuted = value;
                   });
                 },
-                title: Text("Video Muted", style: mystyle(18,Colors.black),),
+                title: Text("Video Mudo", style: mystyle(18,Colors.black),),
               ),
               SizedBox(height: 16,),
               CheckboxListTile(
@@ -112,10 +112,10 @@ class _JoinMeetingState extends State<JoinMeeting> {
                     isAudioMuted = value;
                   });
                 },
-                title: Text("Audio Muted", style: mystyle(18,Colors.black),),
+                title: Text("Audio Mudo", style: mystyle(18,Colors.black),),
               ),
               SizedBox(height: 20,),
-              Text("Of coursem you can customise your settings in the meeting", style: mystyle(15), textAlign: TextAlign.center,),
+              Text("Estas configurações são apenas para o momento do acesso, você poderá alterar após acessar a reunião", style: mystyle(15), textAlign: TextAlign.center,),
               Divider(
                 height: 48,
                 thickness: 2.0,
@@ -126,10 +126,10 @@ class _JoinMeetingState extends State<JoinMeeting> {
                   width: double.maxFinite,
                   height: 64,
                   decoration: BoxDecoration(
-                    gradient: LinearGradient(colors: GradientColors.facebookMessenger)
+                    gradient: LinearGradient(colors: GradientColors.lightBrown)
                   ),
                   child: Center(
-                    child: Text("Join Meeting", style: mystyle(20, Colors.white),),
+                    child: Text("Acessar sala do Cafézinho", style: mystyle(18, Colors.white),),
                   ),
                 ),
               )

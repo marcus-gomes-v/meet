@@ -24,7 +24,7 @@ class _RegisterScreenState extends State<RegisterScreen> {
             width: MediaQuery.of(context).size.width,
             height: MediaQuery.of(context).size.height /2, 
             decoration: BoxDecoration(
-              gradient: LinearGradient(colors: GradientColors.blue)
+              gradient: LinearGradient(colors: [Colors.brown[600], Colors.brown[400]])
             ),
             child: Center(
               child: Image.asset('images/logo.png', height: 100)
@@ -105,6 +105,12 @@ class _RegisterScreenState extends State<RegisterScreen> {
                             'email': emailcontroller.text,
                             'password': passwrodcontroller.text,
                             'uid': signeduser.user.uid,
+                          });
+                          int count = 0;
+                          FirebaseAuth.instance
+                          .signInWithEmailAndPassword(email: emailcontroller.text, password: passwrodcontroller.text);
+                          Navigator.popUntil(context, (route){
+                            return count++ == 2;
                           });
                         });
                       } catch (e) {
